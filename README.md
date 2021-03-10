@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+## Simply put, closure is when an inner function has access to the variables of an outer function.  More specifically, closure deals with the the lexical scope of the inner function being accessible even after a return has been made (i.e. the example with Ryan's counter function).
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+## Closure is occuring with the inner function being able to access 'name' from the outside function personalDice(name).  I can tell because 'name' does not exist in the inner function's block but rather in its lexical scope.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+## When I call dansRoll twice, the thing that is always the same is Dan's name.  What could change is the value of the roll.
 c. What is the lexical scope of `newRoll`? 
+## The lexical scope for 'newRoll' is simply the inner function as the outer function cannot access that variable and its value.
 
 
 ### Task 3 - Stretch Goals
